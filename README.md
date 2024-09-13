@@ -31,7 +31,7 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/OSPOKS/web_sloth.git
+git clone https://github.com/secuRefeds/web_sloth.git
 cd  web_sloth
 ```
 ## Running the Script
