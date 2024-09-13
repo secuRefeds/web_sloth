@@ -63,5 +63,5 @@ web_sloth is intended for educational and ethical hacking purposes only. It shou
 
 ## Contributors
 
- **OSPOKS** 
- **M0SAIF-ANTNET**.
+ # **OSPOKS** 
+ # **M0SAIF-ANTNET**.
