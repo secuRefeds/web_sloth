@@ -1,21 +1,24 @@
+Here's a refined version of your `README.md` file:
 
-# web_sloth: Multi-Vulnerability Scanner
+---
 
-**web_sloth** is a robust and versatile multi-vulnerability scanner designed to identify various web application vulnerabilities, including Local File Inclusion (LFI), Open Redirects (OR), SQL Injection (SQLi), and Cross-Site Scripting (XSS). This tool was developed by **OSPOKS** and **M0SAIF-ANTNET**.
+# **web_sloth: Multi-Vulnerability Web Scanner**
 
-## Features
+**web_sloth** is a comprehensive multi-vulnerability scanner designed to detect a wide range of web application vulnerabilities, such as Local File Inclusion (LFI), Open Redirects (OR), SQL Injection (SQLi), and Cross-Site Scripting (XSS). This tool was created by **OSPOKS** and **M0SAIF-ANTNET** for security researchers and ethical hackers.
 
-- **LFI Scanner**: Scans for vulnerabilities that allow unauthorized access to local files on the server.
-- **Open Redirect Scanner**: Detects potential open redirect issues that can be exploited to redirect users to malicious sites.
-- **SQL Injection Scanner**: Identifies weaknesses that may allow attackers to execute arbitrary SQL queries on the database.
-- **XSS Scanner**: Locates vulnerabilities that could enable attackers to inject malicious scripts into web pages.
-- **Multi-threaded Scanning**: Boosts scanning efficiency by running multiple processes simultaneously.
-- **Custom Payloads**: Enables users to tailor attack payloads to better match the target application’s behavior.
-- **Custom Success Criteria**: Allows setting specific indicators to determine successful exploitation based on individual needs.
-- **Simple Command-line Interface**: Offers a straightforward and easy-to-use command-line interface for quick operation.
-- **Vulnerable URL Storage**: Provides an option to save the URLs found to be vulnerable during the scan for later review.
+## **Features**
 
-## Requirements
+- **LFI Scanner**: Detects vulnerabilities that allow unauthorized access to server files.
+- **Open Redirect Scanner**: Finds potential open redirects that could redirect users to malicious sites.
+- **SQL Injection Scanner**: Identifies weaknesses that allow arbitrary SQL queries on the database.
+- **XSS Scanner**: Locates XSS vulnerabilities that enable malicious script injection.
+- **Multi-threaded Scanning**: Enhances performance by running scans across multiple threads.
+- **Custom Payloads**: Supports tailored payloads for different application behaviors.
+- **Custom Success Criteria**: Allows definition of success markers for precise exploitation detection.
+- **Simple CLI**: Easy-to-use command-line interface for quick and efficient scans.
+- **Vulnerable URL Storage**: Option to save identified vulnerable URLs for future analysis.
+
+## **Requirements**
 
 - **Python 3.x**
 - `webdriver_manager==4.0.2`
@@ -26,42 +29,51 @@
 - `rich==12.6.0`
 - `requests==2.28.1`
 
-## Installation
+## **Installation**
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/secuRefeds/web_sloth.git
-cd  web_sloth
+cd web_sloth
 ```
-## Running the Script
 
-To run the script, use the following command:
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## **Usage**
+
+To start scanning, use the following command:
 
 ```bash
 python web_sloth.py
 ```
-## Input Information:
 
-- **Input URL/File**: You can provide a single URL or an input file containing a list of URLs to scan.
-- **Payload File**: Select or provide a custom payload file for the type of vulnerability you want to scan for.
-- **Success Criteria:**:  Define the patterns or strings that indicate a successful exploitation attempt.
-- **Concurrent Threads:**: Set the number of threads for multi-threaded scanning.
-- **View and Save Results:**: Results will be displayed in real-time as the scan progresses.
-After the scan completes, you will have the option to save the URLs found to be vulnerable to a file for future reference.
+### Input Options:
 
-## Customization
+- **URL/File Input**: Provide either a single URL or a file containing multiple URLs to scan.
+- **Custom Payload File**: Supply a custom payload file for the type of vulnerability you wish to test.
+- **Success Criteria**: Define patterns or strings that indicate a successful exploitation attempt.
+- **Threading**: Specify the number of threads for multi-threaded scanning.
+- **Real-time Results & Saving**: Results will display in real-time, with the option to save vulnerable URLs to a file.
 
-web_sloth allows for various levels of customization to fit your specific testing needs:
-- **Custom Payloads:**: Create or modify payload files to suit specific vulnerability types or applications. Payloads should be tailored to the vulnerability being tested.
-- **Success Criteria:**: Adjust the success criteria patterns in the tool to identify successful exploitation attempts more accurately. For example, you can modify the tool to check for specific error messages or unique responses.
-- **Concurrent Threads:**:  Control the number of concurrent threads used during the scan to optimize performance based on system resources.
+## **Customization**
 
-## Disclaimer
+**web_sloth** offers flexibility for advanced users:
+- **Custom Payloads**: Modify or create payloads to target specific vulnerabilities.
+- **Success Criteria**: Adjust success patterns to match error messages or custom responses.
+- **Thread Control**: Customize the number of concurrent threads based on system capacity for optimized performance.
 
-web_sloth is intended for educational and ethical hacking purposes only. It should only be used to test systems you own or have explicit permission to test. Unauthorized use on third-party websites or systems without consent is illegal and unethical.
+## **Disclaimer**
 
-## Contributors
+**web_sloth** is intended solely for educational purposes and ethical hacking. Use it only on systems you own or have explicit permission to test. Unauthorized usage is illegal and unethical.
 
- ### **OSPOKS** 
- ### **M0SAIF-ANTNET**.
+## **Contributors**
+
+- **OSPOKS**
+- **M0SAIF-ANTNET**
+
+---
