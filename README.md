@@ -1,24 +1,25 @@
-Here's a refined version of your `README.md` file:
 
----
+
 
 # **web_sloth: Multi-Vulnerability Web Scanner**
 
-**web_sloth** is a comprehensive multi-vulnerability scanner designed to detect a wide range of web application vulnerabilities, such as Local File Inclusion (LFI), Open Redirects (OR), SQL Injection (SQLi), and Cross-Site Scripting (XSS). This tool was created by **OSPOKS** and **M0SAIF-ANTNET** for security researchers and ethical hackers.
+**web_sloth** is a powerful and versatile vulnerability scanner designed to detect various security issues in web applications, including Local File Inclusion (LFI), Open Redirects (OR), SQL Injection (SQLi), and Cross-Site Scripting (XSS). This tool, developed by **OSPOKS** and **M0SAIF-ANTNET**, is intended for security researchers, developers, and ethical hackers to assess the security of their web applications.
 
 ## **Features**
 
-- **LFI Scanner**: Detects vulnerabilities that allow unauthorized access to server files.
-- **Open Redirect Scanner**: Finds potential open redirects that could redirect users to malicious sites.
-- **SQL Injection Scanner**: Identifies weaknesses that allow arbitrary SQL queries on the database.
-- **XSS Scanner**: Locates XSS vulnerabilities that enable malicious script injection.
-- **Multi-threaded Scanning**: Enhances performance by running scans across multiple threads.
-- **Custom Payloads**: Supports tailored payloads for different application behaviors.
-- **Custom Success Criteria**: Allows definition of success markers for precise exploitation detection.
-- **Simple CLI**: Easy-to-use command-line interface for quick and efficient scans.
-- **Vulnerable URL Storage**: Option to save identified vulnerable URLs for future analysis.
+- **LFI Scanner**: Detects vulnerabilities allowing unauthorized access to files on the server.
+- **Open Redirect Scanner**: Identifies potential open redirects that could be exploited to direct users to malicious sites.
+- **SQL Injection Scanner**: Uncovers weaknesses that may permit attackers to execute arbitrary SQL queries on a database.
+- **XSS Scanner**: Locates XSS vulnerabilities that could enable attackers to inject malicious scripts into web pages.
+- **Multi-threaded Scanning**: Enhances scanning efficiency by using multiple threads for faster operation.
+- **Custom Payloads**: Enables users to provide tailored attack payloads for specific vulnerability types.
+- **Custom Success Criteria**: Allows users to define specific conditions for identifying successful exploitation attempts.
+- **Command-line Interface (CLI)**: A simple and intuitive CLI for fast and efficient scanning.
+- **Vulnerable URL Storage**: Saves vulnerable URLs discovered during the scan for future analysis.
 
-## **Requirements**
+## **System Requirements**
+
+Before using **web_sloth**, ensure the following dependencies are installed:
 
 - **Python 3.x**
 - `webdriver_manager==4.0.2`
@@ -29,51 +30,58 @@ Here's a refined version of your `README.md` file:
 - `rich==12.6.0`
 - `requests==2.28.1`
 
-## **Installation**
+## **Installation Instructions**
 
-### Clone the Repository
+Follow these steps to install and set up **web_sloth**:
 
-```bash
-git clone https://github.com/secuRefeds/web_sloth.git
-cd web_sloth
-```
+1. **Clone the repository:**
 
-### Install Dependencies
+   ```bash
+   git clone https://github.com/secuRefeds/web_sloth.git
+   cd web_sloth
+   ```
 
-```bash
-pip install -r requirements.txt
-```
+2. **Install the required dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## **Usage**
 
-To start scanning, use the following command:
+To start using **web_sloth**, follow these steps:
 
-```bash
-python web_sloth.py
-```
+1. **Run the tool**:
 
-### Input Options:
+   ```bash
+   python web_sloth.py
+   ```
 
-- **URL/File Input**: Provide either a single URL or a file containing multiple URLs to scan.
-- **Custom Payload File**: Supply a custom payload file for the type of vulnerability you wish to test.
-- **Success Criteria**: Define patterns or strings that indicate a successful exploitation attempt.
-- **Threading**: Specify the number of threads for multi-threaded scanning.
-- **Real-time Results & Saving**: Results will display in real-time, with the option to save vulnerable URLs to a file.
+2. **Input options**:
+   - **URL Input**: Provide a single URL or a file containing multiple URLs to scan.
+   - **Payload Selection**: Choose or supply a custom payload file targeting specific vulnerabilities.
+   - **Success Criteria**: Define patterns or indicators that signal a successful exploitation attempt.
+   - **Concurrent Threads**: Set the number of threads to control the scanning speed and performance.
+   - **Results Output**: View the real-time scan results on the terminal and save the identified vulnerable URLs to a file for further analysis.
 
-## **Customization**
+## **Customization Options**
 
-**web_sloth** offers flexibility for advanced users:
-- **Custom Payloads**: Modify or create payloads to target specific vulnerabilities.
-- **Success Criteria**: Adjust success patterns to match error messages or custom responses.
-- **Thread Control**: Customize the number of concurrent threads based on system capacity for optimized performance.
+**web_sloth** offers several customization features to cater to specific needs:
+
+- **Custom Payloads**: Modify or create your own payloads to target specific vulnerabilities more effectively.
+- **Success Criteria**: Customize the success indicators to identify exploitation attempts based on unique error messages or specific responses.
+- **Multi-threading**: Adjust the number of threads to improve scanning performance based on the available system resources.
 
 ## **Disclaimer**
 
-**web_sloth** is intended solely for educational purposes and ethical hacking. Use it only on systems you own or have explicit permission to test. Unauthorized usage is illegal and unethical.
+**web_sloth** is designed for educational and ethical purposes only. Users must have explicit permission to test the security of any web application. Unauthorized scanning or exploitation of third-party systems is illegal and against the ethical principles of cybersecurity.
 
 ## **Contributors**
 
 - **OSPOKS**
 - **M0SAIF-ANTNET**
 
----
+## **License**
+
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for more information.
+
