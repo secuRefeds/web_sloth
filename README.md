@@ -1,4 +1,4 @@
-
+![Web Sloth Banner](https://github.com/securefeds/web_sloth/banner.png)
 
 
 # **web_sloth: Multi-Vulnerability Web Scanner**
